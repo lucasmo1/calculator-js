@@ -1,0 +1,152 @@
+:root {
+    --background-color: #202020;
+    --button-color: #3b3b3b;
+    --button-color-hover: #323232;
+    --equal-button-color: #76b9ed;
+    --equal-button-hover: #5ca6df;
+    --display-text-color: #ffffff;
+    --opetarion-text-color: #979191;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.operation {
+    text-align: right;
+    padding-right: 15px;
+    margin-bottom: -15px;
+    color: var(--opetarion-text-color);
+    font-size: 1.25rem;
+    font-family: 'Segoe UI';
+    height: 1.5rem;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    width: 450px;
+}
+
+.display-content {
+    color: var(--display-text-color);
+    font-size: 3rem;
+    font-family: 'Segoe UI';
+}
+
+.calculator-buttons-container {
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    color: var(--display-text-color);
+}
+
+.row-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-row {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-left: 0.25rem;
+}
+
+.calc-button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+    color: var(--display-text-color);
+    background-color: var(--button-color);
+    border-radius: 0.25rem;
+    width: 7rem; 
+    height: 4rem;
+    cursor: pointer;
+}
+
+#clear-button, 
+#delete-button, 
+#equal-button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 0.25rem;
+    width: 7rem; 
+    height: 4rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+#equal-button {
+    color: var(--background-color);
+    background-color: var(--equal-button-color);
+    height: 8.25rem;
+    margin-bottom: 0.25rem;
+}
+
+#zero-button {
+    flex-basis: 66.66%;
+}
+
+.calc-button:hover {
+    background-color: var(--button-color-hover);
+}
+
+.calc-button:active {
+    background-color: var(--button-color);
+}
+
+.symbol-button {
+    font-size: 1.6rem;
+    background-color: var(--button-color-hover);
+}
+
+.symbol-button:hover {
+    background-color: var(--button-color);
+}
+
+.symbol-button:active {
+    background-color: var(--button-color-hover);
+}
+
+#equal-button:hover {
+    background-color: var(--equal-button-hover);
+}
+
+#equal-button:active {
+    background-color: var(--equal-button-color);
+}
+
+#clear-button {
+    font-size: 1.25rem;
+    background-color: var(--button-color-hover);
+}
+
+#clear-button:hover {
+    background-color: var(--button-color);
+}
+
+#clear-button:active {
+    background-color: var(--button-color);
+}

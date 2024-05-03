@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="calculator">
+        <span class="operation"></span>
+        <section class="display">
+            <span class="display-content">0</span>
+        </section>
+        <div class="calculator-buttons-container">
+            <div class="row-container">
+                <div class="button-row">
+                    <input type="button" value="C" id="clear-button">
+                    <input type="button" value="←" class="symbol-button" id="delete-button">
+                    <input type="button" value="÷" class="calc-button symbol-button operator-button">
+                </div>
+                <div class="button-row">
+                    <input type="button" value="7" class="calc-button">
+                    <input type="button" value="8" class="calc-button">
+                    <input type="button" value="9" class="calc-button">
+                </div>
+                <div class="button-row">
+                    <input type="button" value="4" class="calc-button">
+                    <input type="button" value="5" class="calc-button">
+                    <input type="button" value="6" class="calc-button">
+                </div>
+                <div class="button-row">
+                    <input type="button" value="1" class="calc-button">
+                    <input type="button" value="2" class="calc-button">
+                    <input type="button" value="3" class="calc-button">
+                </div>
+                <div class="button-row">
+                    <input type="button" value="0" class="calc-button" id="zero-button">
+                    <input type="button" value="." class="calc-button">
+        
+                </div>
+            </div>
+            <div class="button-column">
+                <input type="button" value="x" class="calc-button symbol-button operator-button">
+                <input type="button" value="-" class="calc-button symbol-button operator-button">
+                <input type="button" value="+" class="calc-button symbol-button operator-button">
+                <input type="button" value="=" class="symbol-button" id="equal-button">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
