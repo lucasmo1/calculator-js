@@ -150,3 +150,19 @@ body {
 #clear-button:active {
     background-color: var(--button-color);
 }
+
+@media(width <= 425px) {
+    .display {
+        width: 270px;
+    }
+
+    .calc-button {
+        width: 4rem;
+    }
+
+    #clear-button, 
+    #delete-button, 
+    #equal-button {
+        width: 4rem;
+    }
+}
